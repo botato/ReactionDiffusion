@@ -1,15 +1,11 @@
 public class SimulationSettings
 {
-  private static final float DEFAULT_FEED_RATE = 0;
-  private static final float DEFAULT_KILL_RATE = 0;
-  
-  private float feed_rate;
-  private float kill_rate;
+  private float feed_rate = 0; // Default feed rate is '0'.
+  private float kill_rate = 0; // Default kill rate is '0'.
+  private float frame_rate = 60; // Default frame rate is '60'.
   
   SimulationSettings()
   {
-    feed_rate = DEFAULT_FEED_RATE;
-    kill_rate = DEFAULT_KILL_RATE;
   }
   
   public float GetFeedRate()
