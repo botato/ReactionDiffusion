@@ -1,16 +1,24 @@
-private Scene simulation_scene;
+private Scene scene;
 
 void setup()
 {
-  size(1920, 1080);
-  //size(DisplaySettings.WINDOW_WIDTH, DisplaySettings.WINDOW_HEIGHT); // Set window dimensions
-}
-
-void update()
-{
+  size(1920, 1080); // Set window dimensions
+  
+  initializeScene(); // Initialize the simulation scene.
 }
 
 void draw()
 {
-  simulation_scene.Update(delta_time);
+  scene.Update(delta_time);
+}
+
+void initializeScene()
+{
+  scene = new Scene();
+  
+  frameRate(scene.settings.FrameRate); // Set frame rate for scene.
+}
+
+void update()
+{
 }
