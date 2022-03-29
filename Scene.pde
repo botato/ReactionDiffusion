@@ -51,18 +51,18 @@ public class Scene
     }
   }
   
-  void Update(double delta_time)
+  public void Update(double delta_time)
   {
     for (int x = 0; x < size_x; x++)
     {
       for (int y = 0; y < size_y; y++)
       {
-        // TODO: Update cell
+        // TODO: Implement reaction-diffusion equations.
       }
     }
   }
   
-  void Draw()
+  public void Draw()
   {
   }
 }
