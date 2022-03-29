@@ -10,10 +10,6 @@ public class Cell
     b_concentration = 0.0;
   }
   
-  void Update(double delta_time)
-  {
-  }
-  
   public float GetA()
   {
     return a_concentration;
